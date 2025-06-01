@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="page">
+        <div class="password-generator" align='center'>
+            <h1>Password Generator</h1>
+            <section class="password-display">
+                <input type="text" minlength='6' maxlength='24' id='password-length'>
+                <button id="create">Create New</button>
+                <button id='copy'>Copy Password</button>
+            </section>
+            <br>
+            <label>Use the slider and select options to lengthen your password (6-24)</label>
+            <div class="slider" >
+                <label>Total Characters</label>
+                <input type="range" min="6" max="24" value="9" class="slider" id="myRange">
+                <label id="char-count"></label>
+            </div>
+            <div class="check">
+                    <section class="checkbox">
+                    <input type="checkbox"  id="numCheck" checked>
+                    <label for="numCheck">Include Numbers</label>
+                    </section>
+                <section class="checkbox">
+                    <input type="checkbox" id="letterCheck" checked>
+                    <label for="letterCheck">Include Letters</label>
+                </section>
+                <section class="checkbox">
+                    <input type="checkbox" id="mixedCaseCheck" checked>
+                    <label for="mixedCaseCheck">Include Mixed Case</label>
+                </section>
+                <section class="checkbox">
+                    <input type="checkbox" id="punctuationCheck" checked>
+                    <label for="punctuationCheck">Include Punctuation</label>
+                </section>
+                
+            </div>
+        </div>
+            <div class="question-section">
+                <div id="question1">
+                    <h3>Do you use any of these weak passwords?</h3>
+                    <ul>
+                        <li>Password</li>
+                        <li>123456</li>
+                        <li>Qwerty</li>
+                        <li>Your name</li>
+                    </ul>
+                </div>
+                <div id="question2">
+                    <h3>Why are those passwords weak?</h3>
+                    <ul>
+                        <li>They're easy to guess or crack.</li>
+                        <li>If one of your logins is compromised, a hacker can access all your services.</li>
+                        <div></div>
+                    </ul>
+                </div>
+            </div>
+    
+        
+    </div>
+        <!-- <footer class="alert"> -->
+                <lable id="password-copy">Passwordcopied to clipboard!</lable>
+                <br>
+                <br>
+                <label id="checkbox-selection-alert">
+                Please select at least one checkbox to generate a password
+                </label>
+        <!-- </footer> -->
+    
+        <script src="./script.js"></script>
+</body>
+</html>
