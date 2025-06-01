@@ -1,0 +1,131 @@
+body {
+	/* padding: 0px;
+	margin: 0px; */
+	background-image: url('https://ik.imagekit.io/d9mvewbju/BBA-NeetoSite-and-Project-Resources/password-generator-container_tarSlyutN.png?updatedAt=1730755103984');
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Arial, sans-serif;
+}
+.page{
+	/* position: relative; */
+}
+.password-generator{
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius:  5px;
+	box-shadow: 3px 3px 20px 1px gray;
+	padding: 10px;
+	width: 70%;
+	min-width: 550px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+input[type='text']{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	flex-grow: 70%;
+	padding: 5px;
+}
+
+button{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+button:hover{
+	background-color: #45a049;
+	cursor: pointer;
+}
+
+.password-display{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	background-color: #f4f4f4;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#password-copy{
+	background-color: #4CAF50;
+	
+}
+#checkbox-selection-alert{
+	background-color: #e74c3c;
+}
+#password-copy, #checkbox-selection-alert{
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	/* text-align: center; */
+	position: sticky;
+	bottom: 2px;
+	display: none;
+}
+.alert{
+	/* position: absolute; */
+	/* bottom: 10px; */
+	/* z-index: -1; */
+}
+
+.slider{
+	margin-left: 55px;
+	margin-right: 55px;
+	/* position: sticky; */
+	/* display: flex; */
+	/* justify-content: space-around; */
+}
+
+#char-count{
+	font-weight: bold;
+}
+.check{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* display: flex;
+	word-wrap: break-word;
+	justify-content: space-around; */
+	/* inline-size: 600px;
+	overflow-wrap: break-word; */
+}
+.checkbox{
+	/* display: flex;
+	flex-direction: row;
+	flex-grow: 30%; */
+	margin: 5px;
+	max-width: 30%;
+}
+.question-section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#question1, #question2{
+	align-items: center;
+	border: 1px solid beige;
+	width: 450px;
+}
+#question1>h3, #question2>h3{
+	margin-left: 30px;
+	text-align: left;
+	
+	/* border: 1px solid black; */
+}
+
+li{
+	list-style-type: none;
+}
+/* ul{
+	margin-left: 0;
+} */
+.not-visible{
+	display: none;
+}
+
